@@ -2368,11 +2368,13 @@ class BattleActions {
     ) {
       return megaForme.name;
     }
-    if (
-      item.megaEvolves?.includes(species.name) &&
-      item.megaStone !== species.name
-    ) {
-      return item.megaStone;
+    if (item.megaEvolves !== undefined && item.megaStone !== species.name) {
+      if (typeof item.megaEvolves === "string" && item.megaEvolves === species.name) {
+        return item.megaStone;
+      }
+      if (typeof item.megaEvolves === "object" && item.megaEvolves.includes(species.name)) {
+        return item.megaStone;
+      }
     }
     return null;
   }
