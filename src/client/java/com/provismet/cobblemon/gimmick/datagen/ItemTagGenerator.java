@@ -1,5 +1,6 @@
 package com.provismet.cobblemon.gimmick.datagen;
 
+import com.cobblemon.mod.common.api.tags.CobblemonItemTags;
 import com.provismet.cobblemon.gimmick.registry.GTGItems;
 import com.provismet.cobblemon.gimmick.util.tag.GTGItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -158,6 +159,77 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
             .add(GTGItems.STEEL_TERA_SHARD)
             .add(GTGItems.WATER_TERA_SHARD)
             .add(GTGItems.STELLAR_TERA_SHARD);
+
+        this.getOrCreateTagBuilder(GTGItemTags.ARCEUS_PLATES)
+            .add(GTGItems.DRACO_PLATE)
+            .add(GTGItems.DREAD_PLATE)
+            .add(GTGItems.EARTH_PLATE)
+            .add(GTGItems.FIST_PLATE)
+            .add(GTGItems.FLAME_PLATE)
+            .add(GTGItems.ICICLE_PLATE)
+            .add(GTGItems.INSECT_PLATE)
+            .add(GTGItems.IRON_PLATE)
+            .add(GTGItems.MEADOW_PLATE)
+            .add(GTGItems.MIND_PLATE)
+            .add(GTGItems.PIXIE_PLATE)
+            .add(GTGItems.SKY_PLATE)
+            .add(GTGItems.SPLASH_PLATE)
+            .add(GTGItems.SPOOKY_PLATE)
+            .add(GTGItems.STONE_PLATE)
+            .add(GTGItems.TOXIC_PLATE)
+            .add(GTGItems.ZAP_PLATE);
+
+        this.getOrCreateTagBuilder(GTGItemTags.SILVALLY_MEMORIES)
+            .add(GTGItems.BUG_MEMORY)
+            .add(GTGItems.DARK_MEMORY)
+            .add(GTGItems.DRAGON_MEMORY)
+            .add(GTGItems.ELECTRIC_MEMORY)
+            .add(GTGItems.FAIRY_MEMORY)
+            .add(GTGItems.FIGHTING_MEMORY)
+            .add(GTGItems.FIRE_MEMORY)
+            .add(GTGItems.FLYING_MEMORY)
+            .add(GTGItems.GHOST_MEMORY)
+            .add(GTGItems.GRASS_MEMORY)
+            .add(GTGItems.GROUND_MEMORY)
+            .add(GTGItems.ICE_MEMORY)
+            .add(GTGItems.POISON_MEMORY)
+            .add(GTGItems.PSYCHIC_MEMORY)
+            .add(GTGItems.ROCK_MEMORY)
+            .add(GTGItems.STEEL_MEMORY)
+            .add(GTGItems.WATER_MEMORY);
+
+        this.getOrCreateTagBuilder(GTGItemTags.GENESECT_DRIVES)
+            .add(GTGItems.BURN_DRIVE)
+            .add(GTGItems.CHILL_DRIVE)
+            .add(GTGItems.DOUSE_DRIVE)
+            .add(GTGItems.SHOCK_DRIVE);
+
+        this.getOrCreateTagBuilder(GTGItemTags.ORICORIO_NECTAR)
+            .add(GTGItems.PINK_NECTAR)
+            .add(GTGItems.PURPLE_NECTAR)
+            .add(GTGItems.RED_NECTAR)
+            .add(GTGItems.YELLOW_NECTAR);
+
+        this.getOrCreateTagBuilder(GTGItemTags.OGERPON_MASKS)
+            .add(GTGItems.WELLSPRING_MASK)
+            .add(GTGItems.HEARTHFLAME_MASK)
+            .add(GTGItems.CORNERSTONE_MASK);
+
+        this.getOrCreateTagBuilder(GTGItemTags.FORM_CHANGE)
+            .addOptionalTag(GTGItemTags.Z_CRYSTAL_TYPE) // Arceus
+            .addOptionalTag(GTGItemTags.ARCEUS_PLATES)
+            .addOptionalTag(GTGItemTags.SILVALLY_MEMORIES)
+            .addOptionalTag(GTGItemTags.GENESECT_DRIVES)
+            .addOptionalTag(GTGItemTags.ORICORIO_NECTAR)
+            .addOptionalTag(GTGItemTags.OGERPON_MASKS);
+
+        this.getOrCreateTagBuilder(CobblemonItemTags.ANY_HELD_ITEM)
+            .addOptionalTag(GTGItemTags.MEGA_STONES)
+            .addOptionalTag(GTGItemTags.Z_CRYSTALS)
+            .addOptionalTag(GTGItemTags.ARCEUS_PLATES)
+            .addOptionalTag(GTGItemTags.SILVALLY_MEMORIES)
+            .addOptionalTag(GTGItemTags.GENESECT_DRIVES)
+            .addOptionalTag(GTGItemTags.OGERPON_MASKS);
 
         this.getOrCreateTagBuilder(ConventionalItemTags.MUSHROOMS)
             .add(GTGItems.MAX_MUSHROOM);

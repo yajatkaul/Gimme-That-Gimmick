@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "#gimme-that-gimmick:typed_z-crystal",
+      "required": false
+    },
+    {
+      "id": "#gimme-that-gimmick:arceus_plates",
+      "required": false
+    },
+    {
+      "id": "#gimme-that-gimmick:silvally_memories",
+      "required": false
+    },
+    {
+      "id": "#gimme-that-gimmick:genesect_drives",
+      "required": false
+    },
+    {
+      "id": "#gimme-that-gimmick:oricorio_nectar",
+      "required": false
+    },
+    {
+      "id": "#gimme-that-gimmick:ogerpon_masks",
+      "required": false
+    }
+  ]
+}

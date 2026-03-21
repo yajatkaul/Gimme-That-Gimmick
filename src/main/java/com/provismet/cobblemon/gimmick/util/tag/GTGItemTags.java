@@ -24,6 +24,16 @@ public abstract class GTGItemTags {
 
     public static final TagKey<Item> GIMMICK_ENCHANTABLE = GTGItemTags.of("enchantable/gimmick");
 
+    public static final TagKey<Item> FORM_CHANGE = GTGItemTags.of("form_change");
+    public static final TagKey<Item> ARCEUS_PLATES = GTGItemTags.of("arceus_plates");
+    public static final TagKey<Item> SINNOH_ORBS = GTGItemTags.of("sinnoh_orbs");
+    public static final TagKey<Item> HOENN_ORBS = GTGItemTags.of("hoenn_orbs");
+    public static final TagKey<Item> GALAR_RUSTED = GTGItemTags.of("galar_rusted");
+    public static final TagKey<Item> SILVALLY_MEMORIES = GTGItemTags.of("silvally_memories");
+    public static final TagKey<Item> GENESECT_DRIVES = GTGItemTags.of("genesect_drives");
+    public static final TagKey<Item> ORICORIO_NECTAR = GTGItemTags.of("oricorio_nectar");
+    public static final TagKey<Item> OGERPON_MASKS = GTGItemTags.of("ogerpon_masks");
+
     private static TagKey<Item> of (String name) {
         return TagKey.of(RegistryKeys.ITEM, GimmeThatGimmickMain.identifier(name));
     }
