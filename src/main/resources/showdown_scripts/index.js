@@ -50,6 +50,10 @@ function startBattle(graalShowdown, battleId, requestMessages) {
 
 function sendBattleMessage(battleId, messages) {
   const battleStream = battleMap.get(battleId);
+  if (battleStream === undefined) { // There was once a crash because this was somehow undefined.
+    return;
+  }
+
   for (const element of messages) {
     battleStream.write(element);
   }

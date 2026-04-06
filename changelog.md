@@ -6,4 +6,5 @@
 
 ## Bugfixes
 - Regional forms can no longer use non-regional megastones (again).
-  - This fix got reverted with the 1.7 update. 
+  - This fix got reverted with the 1.7 update.
+- Fixed rare Showdown crash.
