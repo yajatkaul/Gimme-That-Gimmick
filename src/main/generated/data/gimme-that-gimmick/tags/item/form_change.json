@@ -23,6 +23,18 @@
     {
       "id": "#gimme-that-gimmick:ogerpon_masks",
       "required": false
+    },
+    {
+      "id": "#gimme-that-gimmick:hoenn_orbs",
+      "required": false
+    },
+    {
+      "id": "#gimme-that-gimmick:sinnoh_orbs",
+      "required": false
+    },
+    {
+      "id": "#gimme-that-gimmick:galar_rusted",
+      "required": false
     }
   ]
 }

@@ -215,13 +215,29 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
             .add(GTGItems.HEARTHFLAME_MASK)
             .add(GTGItems.CORNERSTONE_MASK);
 
+        this.getOrCreateTagBuilder(GTGItemTags.HOENN_ORBS)
+            .add(GTGItems.RED_ORB)
+            .add(GTGItems.BLUE_ORB);
+
+        this.getOrCreateTagBuilder(GTGItemTags.SINNOH_ORBS)
+            .add(GTGItems.ADAMANT_CRYSTAL)
+            .add(GTGItems.LUSTROUS_GLOBE)
+            .add(GTGItems.GRISEOUS_CORE);
+
+        this.getOrCreateTagBuilder(GTGItemTags.GALAR_RUSTED)
+            .add(GTGItems.RUSTED_SWORD)
+            .add(GTGItems.RUSTED_SHIELD);
+
         this.getOrCreateTagBuilder(GTGItemTags.FORM_CHANGE)
             .addOptionalTag(GTGItemTags.Z_CRYSTAL_TYPE) // Arceus
             .addOptionalTag(GTGItemTags.ARCEUS_PLATES)
             .addOptionalTag(GTGItemTags.SILVALLY_MEMORIES)
             .addOptionalTag(GTGItemTags.GENESECT_DRIVES)
             .addOptionalTag(GTGItemTags.ORICORIO_NECTAR)
-            .addOptionalTag(GTGItemTags.OGERPON_MASKS);
+            .addOptionalTag(GTGItemTags.OGERPON_MASKS)
+            .addOptionalTag(GTGItemTags.HOENN_ORBS)
+            .addOptionalTag(GTGItemTags.SINNOH_ORBS)
+            .addOptionalTag(GTGItemTags.GALAR_RUSTED);
 
         this.getOrCreateTagBuilder(CobblemonItemTags.ANY_HELD_ITEM)
             .addOptionalTag(GTGItemTags.MEGA_STONES)

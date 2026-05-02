@@ -45,6 +45,16 @@ public class LanguageGenerator extends LilyLanguageProvider {
         translationBuilder.add(GTGItemTags.TERA_SHARDS, "Tera Shards");
         translationBuilder.add(GTGItemTags.GIMMICK_ENCHANTABLE, "Gimmick Enchantable");
 
+        translationBuilder.add(GTGItemTags.FORM_CHANGE, "Form Change Items");
+        translationBuilder.add(GTGItemTags.ARCEUS_PLATES, "Arceus Plates");
+        translationBuilder.add(GTGItemTags.HOENN_ORBS, "Hoenn Orbs");
+        translationBuilder.add(GTGItemTags.SINNOH_ORBS, "Sinnoh Orbs");
+        translationBuilder.add(GTGItemTags.GALAR_RUSTED, "Galar Rusted Armaments");
+        translationBuilder.add(GTGItemTags.SILVALLY_MEMORIES, "Silvally Memories");
+        translationBuilder.add(GTGItemTags.GENESECT_DRIVES, "Genesect Drives");
+        translationBuilder.add(GTGItemTags.OGERPON_MASKS, "Ogerpon Masks");
+        translationBuilder.add(GTGItemTags.ORICORIO_NECTAR, "Oricorio Nectar");
+
         translationBuilder.add("message.overlay.gimmethatgimmick.yes", "Yes");
         translationBuilder.add("message.overlay.gimmethatgimmick.no", "No");
 
